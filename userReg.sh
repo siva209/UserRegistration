@@ -7,7 +7,7 @@ read -p "enter emil : " emil
 pat="^[A-Z]{1}[a-z]{2,}$"
 pat2="^[a-z]{2,}[A-Z]{1}$"
 pat3="^[a-zA-Z][a-zA-Z0-9._-+]*[@]{1}[a-zA-Z0-9]*[.]{1}[a-zA-Z]{2,4}[.]{1}*[a-zA-Z]{2,3}*$"
-if [[ $userlastname =~ $pat3 ]]
+if [[ $email =~ $pat3 ]]
 then
 
 echo "valid email"
