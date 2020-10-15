@@ -14,7 +14,8 @@ pat3="^[a-zA-Z][a-zA-Z0-9._-+]*[@]{1}[a-zA-Z0-9]*[.]{1}[a-zA-Z]{2,4}[.]{1}*[a-zA
 pat4=='^((\+){1}91){1}[ ]?[0-9]{10}$'
 pat5="^[a-zA-Z0-9]{8,}"
 pat6="^([a-zA-Z0-9]*[A-Z]+[a-zA-Z0-9]*)$"
-if [[ $password =~ $pat6 ]]
+pat7="^([a-zA-Z0-9]*[0-9]+[a-zA-Z0-9]*)$"
+if [[ $password =~ $pat7 ]]
 then
 
 echo "valid password"
